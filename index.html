@@ -53,7 +53,7 @@
 
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li class="active"><a href="tutorial-single.html" class="nav-link">Tutorials</a></li>
+                <li class="active"><a href="index.html" class="nav-link">Tutorials</a></li>
               </ul>
             </nav>
           </div>
@@ -88,7 +88,8 @@
             <!-- Central Video Player -->
             <div class="videoWrapper">
               <iframe id="centralVideoPlayer" width="560" height="349"
-                src="https://www.youtube.com/embed/xW-zNOT4P1A?si=9NPrUayT4UehLeTu" frameborder="0" allowfullscreen></iframe>
+                src="https://www.youtube.com/embed/xW-zNOT4P1A?si=9NPrUayT4UehLeTu" frameborder="0"
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -101,7 +102,8 @@
             <ul class="list-unstyled tutorial-section-list">
               <li>
                 <h3><a href="#centralVideoPlayer"
-                    onclick="playVideo('https://www.youtube.com/embed/xW-zNOT4P1A?si=9NPrUayT4UehLeTu')">How to React</a></h3>
+                    onclick="playVideo('https://www.youtube.com/embed/xW-zNOT4P1A?si=9NPrUayT4UehLeTu')">How to
+                    React</a></h3>
                 <p><span class="mr-2 mb-2">1hr 24m</span></p>
                 <a href="#centralVideoPlayer" class="play btn btn-primary"
                   onclick="playVideo('https://www.youtube.com/embed/xW-zNOT4P1A?si=9NPrUayT4UehLeTu')">Play</a>
@@ -173,19 +175,19 @@
     </div>
   </div>
 
-    <div class="site-section">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-lg-12">
-                    <!-- Language Selection using Bootstrap btn-group -->
-                    <div class="btn-group btn-toggle">
-                        <button class="btn btn-outline-primary btn-language active" data-lang="en">English</button>
-                        <button class="btn btn-outline-primary btn-language" data-lang="es">Español</button>
-                    </div>
-                </div>
-            </div>
+  <div class="site-section">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-lg-12">
+          <!-- Language Selection using Bootstrap btn-group -->
+          <div class="btn-group btn-toggle">
+            <button class="btn btn-outline-primary btn-language active" data-lang="en">English</button>
+            <button class="btn btn-outline-primary btn-language" data-lang="es">Español</button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -205,10 +207,10 @@
     }
     // Toggle language on button click
     $('.btn-toggle .btn').click(function () {
-            $(this).toggleClass('active').siblings().removeClass('active');
-            const selectedLanguage = $(this).data('lang');
-            // You can add logic here to switch language content if needed
-        });
+      $(this).toggleClass('active').siblings().removeClass('active');
+      const selectedLanguage = $(this).data('lang');
+      // You can add logic here to switch language content if needed
+    });
     function playVideo(videoSource) {
       // Update the source of the central video player
       document.getElementById('centralVideoPlayer').src = videoSource;
